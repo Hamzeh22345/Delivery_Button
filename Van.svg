@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="35" viewBox="0 0 107 35">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#afafaf"/>
+    </linearGradient>
+  </defs>
+  <g id="Van" transform="translate(-253 -184)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="80" height="35" rx="4" transform="translate(253 184)" fill="url(#linear-gradient)"/>
+    <path id="Rectangle_2" data-name="Rectangle 2" d="M0,0H21a4,4,0,0,1,4,4V26a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(335 187)" fill="#186700"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="2" height="16" transform="translate(333 194)" fill="#1e7d01"/>
+    <path id="Rectangle_4" data-name="Rectangle 4" d="M1.529,0h0A11.471,11.471,0,0,1,13,11.471v1.059A11.471,11.471,0,0,1,1.529,24h0A1.529,1.529,0,0,1,0,22.471V1.529A1.529,1.529,0,0,1,1.529,0Z" transform="translate(341 190)" fill="#161616"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="2" height="8" transform="translate(358 191)" class="rect" fill="#fc3"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="2" height="8" transform="translate(358 205)" class="rect" fill="#fc3"/>
+    <path id="Path_1" data-name="Path 1" d="M.32-.253,16.271,1.064l.872,1.451L1.343,1.451Z" transform="translate(340.586 191.28) rotate(31)" fill="rgba(255,255,255,0.32)"/>
+    <path id="Path_2" data-name="Path 2" d="M.424-.128,15.847.981l.429,1.739L1.471,1.614Z" transform="translate(340.586 196.28) rotate(31)" fill="rgba(255,255,255,0.32)"/>
+  </g>
+</svg>
