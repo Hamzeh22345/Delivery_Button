@@ -1,0 +1,167 @@
+*,
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(220, 220, 220);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &.move {
+    .box {
+      animation: moveBox 5s linear;
+    }
+
+    .van {
+      animation: moveVan 5s linear;
+
+
+    }
+
+    .h-button:before {
+      animation: moveLine 5s linear;
+    }
+
+    .ship {
+      opacity: 0;
+    }
+  }
+}
+
+
+.h-button {
+  position: relative;
+  background-color: #121212;
+  border: none;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  overflow: hidden;
+
+  .ship {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  .van,
+  .box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 52%;
+  }
+
+  .van {
+    right: -120px;
+    z-index: 10;
+    transition: transform 5s linear;
+  }
+
+  .box {
+    left: -40px;
+    z-index: 5;
+    transition: transform 5s linear;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -300px;
+    width: 300px;
+    z-index: 1;
+    transition: all 5s linear;
+    border-bottom: 3px dashed #f9f4f4;
+    border-width: 5px;
+  }
+
+  @keyframes moveVan {
+    0% {
+      right: -120px;
+    }
+
+    20% {
+      right: 24px;
+    }
+
+    40% {
+      right: 24px;
+    }
+
+    60% {
+      right: 50px;
+    }
+
+    100% {
+      right: -300px;
+
+    }
+  }
+
+  @keyframes moveLine {
+    0% {
+      right: -300px;
+    }
+
+    20% {
+      right: -300px;
+    }
+
+    40% {
+      right: -300px;
+    }
+
+
+    80% {
+      right: 175px;
+    }
+
+    100% {
+      right: 300px;
+    }
+  }
+
+  @keyframes moveBox {
+    0% {
+      left: -40px;
+    }
+
+    10% {
+      left: 15px;
+    }
+
+    20% {
+      left: 15px;
+    }
+
+    30% {
+      left: 30px;
+    }
+
+    50% {
+      left: 70px;
+      visibility: hidden;
+    }
+
+    100% {
+      visibility: hidden;
+    }
+  }
+}
